@@ -479,7 +479,8 @@ centos () {
 
     dnf install -y php php-gd php-mbstring php-intl php-pecl-apcu \
                     php-mysqlnd php-opcache php-json php-zip php-pear \
-                     gcc curl-devel php-devel zlib-devel pcre-devel make
+                     gcc curl-devel php-devel zlib-devel pcre-devel make \
+                     php-opcache 
 
     dnf install -y mariadb mariadb-server
     systemctl start mariadb
